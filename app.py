@@ -29,20 +29,23 @@
 #     bill = "$" + str(bill)
 #     print(bill)
 
-number = input("Number to factor:")
-for i in range(21):
-    factor = []
-    dividing_number = 1
-    
-    number = int(number)%dividing_number
-    if number == 0: 
-        factor.apend(dividing_number)
-        dividing_number += 1
-    elif number == 1:
-        continue
-    print(factor)
 
+
+
+# dividing_number = 1
+# number = int(input("Number to factor:"))
+# factor = [1, number]
+# for i in range(2,number):    
     
+#     if number%i == 0 : 
+#         factor.append(i)
+#         print(factor)
+        
+
+#     else: 
+#         continue
+
+
 
 
 
