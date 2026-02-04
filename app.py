@@ -47,5 +47,30 @@
 
 
 
+number = int(input("Number1 to factor:"))
+number2 = int(input("Number2 to factor:"))
+factors = []
+loop = max(number, number2)
+for p in range(loop):
+    dividing_number = 1
+    
+    for i in range(2, number):    
+        if number%i == 0 : 
+            factors.append(i)
+        else: 
+            continue
 
+    dividing_number2 = 1
+    for o in range(2,number2):    
+        
+        if number2%o == 0 : 
+            factors.append(o)       
+        else: 
+            continue
+print("Done")
+gcf = 0 
+for factor in factors:
+    if factor > gcf and number%factor == 0 and number2%factor == 0:
+        gcf = factor
 
+print(gcf)
